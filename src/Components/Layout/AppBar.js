@@ -15,14 +15,14 @@ import { styles } from './AppBar.styles';
 
 class MAppBar extends React.PureComponent {
   render() {
-    const { classes } = this.props;
+    const { classes, handleDrawerToggle } = this.props;
     return (
       <AppBar className={classes.appBar}>
         <Toolbar>
           <IconButton
             color="inherit"
             aria-label="open drawer"
-            onClick={this.handleDrawerToggle}
+            onClick={handleDrawerToggle}
             className={classes.navIconHide}
           >
             <MenuIcon />

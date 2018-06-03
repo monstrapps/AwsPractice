@@ -22,10 +22,14 @@ class Layout extends React.Component {
       classes,
       children,
     } = this.props;
-    const { mobileOpen } = this.state;
+    const {
+      mobileOpen
+    } = this.state;
     return (
       <div className={classes.root}>
-        <AppBar />
+        <AppBar 
+          handleDrawerToggle={() => this.handleDrawerToggle()}
+        />
         <Drawer
           mobileOpen={mobileOpen}
           handleDrawerToggle={() => this.handleDrawerToggle()}

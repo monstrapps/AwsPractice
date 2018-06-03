@@ -6,4 +6,9 @@ export const styles = theme => ({
       width: `calc(100% - ${theme.constants.drawerWidth}px)`,
     },
   },
+  navIconHide: {
+    [theme.breakpoints.up('md')]: {
+      display: 'none',
+    },
+  },
 })

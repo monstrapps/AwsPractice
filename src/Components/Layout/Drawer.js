@@ -6,13 +6,13 @@ import { styles } from './Drawer.styles';
 
 class MDrawer extends React.PureComponent {
   render() {
-    const { classes, theme, mobileOpen, handleDrawerToggle } = this.props;
+    const { classes, mobileOpen, handleDrawerToggle } = this.props;
     return (
       <React.Fragment>
         <Hidden mdUp>
           <Drawer
             variant="temporary"
-            anchor={theme.direction === 'rtl' ? 'right' : 'left'}
+            anchor="left"
             open={mobileOpen}
             onClose={handleDrawerToggle}
             classes={{

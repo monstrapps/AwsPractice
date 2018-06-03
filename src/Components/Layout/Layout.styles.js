@@ -8,11 +8,6 @@ const styles = theme => ({
     display: 'flex',
     width: '100%',
   },
-  navIconHide: {
-    [theme.breakpoints.up('md')]: {
-      display: 'none',
-    },
-  },
   content: {
     flexGrow: 1,
     backgroundColor: theme.palette.background.default,
