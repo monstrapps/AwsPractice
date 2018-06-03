@@ -24,9 +24,7 @@ class DrawerItems extends React.PureComponent {
   render() {
     const { classes } = this.props;
     return (
-      <div>
-        <div className={classes.toolbar} />
-        <Divider />
+      <div className={classes.root}>
         <List>{mailFolderListItems}</List>
         <Divider />
         <List>{otherMailFolderListItems}</List>

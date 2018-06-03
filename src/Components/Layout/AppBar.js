@@ -18,7 +18,7 @@ class MAppBar extends React.PureComponent {
     const { classes, handleDrawerToggle } = this.props;
     return (
       <AppBar className={classes.appBar}>
-        <Toolbar>
+        <Toolbar classes={{ root: classes.toolbar }}>
           <IconButton
             color="inherit"
             aria-label="open drawer"
