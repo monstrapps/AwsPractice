@@ -1,5 +1,3 @@
-const drawerWidth = 240;
-
 const styles = theme => ({
   root: {
     flexGrow: 1,
@@ -10,23 +8,9 @@ const styles = theme => ({
     display: 'flex',
     width: '100%',
   },
-  appBar: {
-    position: 'absolute',
-    marginLeft: drawerWidth,
-    [theme.breakpoints.up('md')]: {
-      width: `calc(100% - ${drawerWidth}px)`,
-    },
-  },
   navIconHide: {
     [theme.breakpoints.up('md')]: {
       display: 'none',
-    },
-  },
-  toolbar: theme.mixins.toolbar,
-  drawerPaper: {
-    width: drawerWidth,
-    [theme.breakpoints.up('md')]: {
-      position: 'relative',
     },
   },
   content: {

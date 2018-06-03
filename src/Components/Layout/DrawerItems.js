@@ -1,16 +1,42 @@
 import React from 'react';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemIcon from '@material-ui/core/ListItemIcon';
-import ListItemText from '@material-ui/core/ListItemText';
-import InboxIcon from '@material-ui/icons/MoveToInbox';
-import DraftsIcon from '@material-ui/icons/Drafts';
-import StarIcon from '@material-ui/icons/Star';
-import SendIcon from '@material-ui/icons/Send';
-import MailIcon from '@material-ui/icons/Mail';
-import DeleteIcon from '@material-ui/icons/Delete';
-import ReportIcon from '@material-ui/icons/Report';
+import {
+  Divider,
+  List,
+  ListItemText,
+  ListItem,
+  ListItemIcon,
+  withStyles,
+  withTheme,
+} from '@material-ui/core';
+import {
+  Menu as MenuIcon,
+  Report as ReportIcon,
+  Delete as DeleteIcon,
+  Mail as MailIcon,
+  Send as SendIcon,
+  Drafts as DraftsIcon,
+  Star as StarIcon,
+  MoveToInbox as InboxIcon,
+} from '@material-ui/icons';
+import { compose } from 'recompose';
+import { styles } from './DrawerItems.styles'
 
-export const mailFolderListItems = (
+class DrawerItems extends React.PureComponent {
+  render() {
+    const { classes } = this.props;
+    return (
+      <div>
+        <div className={classes.toolbar} />
+        <Divider />
+        <List>{mailFolderListItems}</List>
+        <Divider />
+        <List>{otherMailFolderListItems}</List>
+      </div>
+    )
+  }
+}
+
+const mailFolderListItems = (
   <div>
     <ListItem button>
       <ListItemIcon>
@@ -39,7 +65,7 @@ export const mailFolderListItems = (
   </div>
 );
 
-export const otherMailFolderListItems = (
+const otherMailFolderListItems = (
   <div>
     <ListItem button>
       <ListItemIcon>
@@ -61,3 +87,8 @@ export const otherMailFolderListItems = (
     </ListItem>
   </div>
 );
+
+export default compose(
+  withStyles(),
+  withTheme(),
+)(DrawerItems);
