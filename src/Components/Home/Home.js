@@ -1,5 +1,6 @@
 import React from 'react'
-import { Button } from '@material-ui/core'
+import { Button, withStyles, withTheme } from '@material-ui/core'
+import { compose } from 'recompose'
 import { connect } from 'react-redux';
 import { increment, decrement } from '../../Store/Actions/ExampleActions';
 
@@ -21,4 +22,8 @@ const mapStateToProps = (state) => {
   }
 }
 
-export default connect(mapStateToProps)(Home);
+export default compose(
+  connect(mapStateToProps),
+  withStyles(),
+  withTheme()
+)(Home);
