@@ -44,5 +44,4 @@ class MDrawer extends React.PureComponent {
 export default compose(
   withStyles(styles),
   withTheme(),
-)
-(MDrawer)
+)(MDrawer)

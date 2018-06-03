@@ -5,7 +5,6 @@ import {
 } from '@material-ui/core'
 import { compose } from 'recompose';
 import styles from './Layout.styles';
-import DrawerItems from './DrawerItems';
 import AppBar from './AppBar';
 import Drawer from './Drawer';
 

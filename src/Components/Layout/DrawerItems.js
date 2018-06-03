@@ -9,7 +9,6 @@ import {
   withTheme,
 } from '@material-ui/core';
 import {
-  Menu as MenuIcon,
   Report as ReportIcon,
   Delete as DeleteIcon,
   Mail as MailIcon,
@@ -89,6 +88,6 @@ const otherMailFolderListItems = (
 );
 
 export default compose(
-  withStyles(),
+  withStyles(styles),
   withTheme(),
 )(DrawerItems);
