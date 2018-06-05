@@ -1,9 +1,8 @@
 import { createMuiTheme } from '@material-ui/core/styles';
-import blue from '@material-ui/core/colors/blue';
-import green from '@material-ui/core/colors/green';
-import purple from '@material-ui/core/colors/deepPurple';
+import { green300 as light, green500 as main, green700 as dark } from '@material-ui/core/colors';
 
 const theme = createMuiTheme({
+
   overrides: {
     MuiListItemIcon: {
       root: {
@@ -12,8 +11,15 @@ const theme = createMuiTheme({
     }
   },
   palette: {
-    primary: purple,
-    secondary: green,
+    primary: {
+      light: '#8e99f3',
+      main: '#5c6bc0',
+      dark: '#26418f',
+      contrastText: '#ffffff',
+    },
+    background: {
+      default: '#2C3133',
+    },
     text: {
       primary: 'rgb(255, 255, 255, 0.6)'
     },

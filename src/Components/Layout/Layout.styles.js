@@ -6,6 +6,7 @@ const styles = theme => ({
     position: 'relative',
     display: 'flex',
     width: '100%',
+    backgroundColor: theme.palette.background.default,
   },
   content: {
     flexGrow: 1,
