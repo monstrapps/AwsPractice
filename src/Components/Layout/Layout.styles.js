@@ -9,7 +9,6 @@ const styles = theme => ({
   },
   content: {
     flexGrow: 1,
-    backgroundColor: theme.palette.background.default,
     [`${theme.breakpoints.up('xs')} and (orientation: landscape)`]: { 
       marginTop: 48, 
     }, 
