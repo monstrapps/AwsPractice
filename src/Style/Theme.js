@@ -8,6 +8,11 @@ const theme = createMuiTheme({
       root: {
         color: 'rgb(255, 255, 255, 0.6)'
       }
+    },
+    MuiPaper: {
+      root: {
+        backgroundColor: '#63748e',
+      }
     }
   },
   palette: {

@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react'
 import { Switch, Route } from 'react-router-dom'
 import Layout from './Components/Layout/Layout'
-import Home from './Components/Home/Home'
+import Home from './Composers/Home/Home'
 import WorkoutBuilderContainer from './Components/WorkoutBuilder/WorkoutBuilderContainer';
 
 class App extends PureComponent {
