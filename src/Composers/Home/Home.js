@@ -2,7 +2,6 @@ import React from 'react'
 import { withStyles, withTheme, Grid } from '@material-ui/core'
 import { compose } from 'recompose'
 import { connect } from 'react-redux';
-import ScheduleContainer from '../../Components/Schedule/ScheduleContainer';
 
 class Home extends React.PureComponent {
   render() {
@@ -10,7 +9,7 @@ class Home extends React.PureComponent {
     return (
       <Grid container spacing={16} className={classes.root}>
         <Grid item xs={6}>
-          <ScheduleContainer />
+          <div>content..</div>
         </Grid>
       </Grid>
     )

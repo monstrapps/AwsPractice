@@ -3,32 +3,8 @@ import { green300 as light, green500 as main, green700 as dark } from '@material
 
 const theme = createMuiTheme({
 
-  overrides: {
-    MuiListItemIcon: {
-      root: {
-        color: 'rgb(255, 255, 255, 0.6)'
-      }
-    },
-    MuiPaper: {
-      root: {
-        backgroundColor: '#63748e',
-      }
-    }
-  },
-  palette: {
-    primary: {
-      light: '#8e99f3',
-      main: '#5c6bc0',
-      dark: '#26418f',
-      contrastText: '#ffffff',
-    },
-    background: {
-      default: '#2C3133',
-    },
-    text: {
-      primary: 'rgb(255, 255, 255, 0.6)'
-    },
-  },
+  overrides: {},
+  palette: {},
   constants: {
     drawerWidth: 240,
   },

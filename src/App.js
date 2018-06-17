@@ -2,7 +2,6 @@ import React, { PureComponent } from 'react'
 import { Switch, Route } from 'react-router-dom'
 import Layout from './Components/Layout/Layout'
 import Home from './Composers/Home/Home'
-import WorkoutBuilderContainer from './Components/WorkoutBuilder/WorkoutBuilderContainer';
 
 class App extends PureComponent {
   render() {
@@ -10,7 +9,6 @@ class App extends PureComponent {
       <Switch>
         <Layout>
           <Route path='/' exact component={Home} />
-          <Route path='/builder' component={WorkoutBuilderContainer} />
         </Layout>
       </Switch>
     );
